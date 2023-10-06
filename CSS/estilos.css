@@ -1,0 +1,153 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+main .suplemento {
+    display: none;
+    height: 100vh;
+}
+
+main .suplemento.selecionado{
+    display: block;
+}
+
+main .suplemento .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    max-width: 380px;
+    
+}
+
+
+.conteudo .nome-suplemento {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 48px;
+    font-family: Secular One;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.conteudo .descricao {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: aliceblue;
+    font-family: Rubik;
+    line-height: 24px;
+}
+
+
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+   
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+    .botoes .botao {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .botoes .botao img {
+        border-radius: 20%;
+
+    }
+
+    .botoes .botao.selecionado {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px #d9d9d9;
+
+    }
+
+    
+        
+    
+
+
+    body{
+        font-family: Secular one;
+        color: aliceblue;
+        background-color: black;
+    }
+
+    .logotipo{
+        width: 200px;
+        
+    }
+
+    .header,
+    .navigation_header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .navigation_header{
+        gap: 3em;
+    }
+
+    .navigation_header a{
+        text-decoration: none;
+        color: aliceblue;
+        transition: 1s;
+        font-size: bold;
+    }
+
+    .header{
+        height: 56px;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .active{
+        background-color: gray;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .btn_icon_header{
+        display: none;
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+
+    }
+
+   @media screen and (max-width: 768px){
+    .btn_icon_header{
+        display: block;
+    }
+    
+   }
+
+   
+
+
+
+   
